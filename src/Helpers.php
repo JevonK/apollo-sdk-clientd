@@ -1,6 +1,6 @@
 <?php
-namespace ApolloSdk\Helpers;
-use ApolloSdk\Clientd\Storage;
+namespace ApolloSdk2\Helpers;
+use ApolloSdk2\Clientd\Storage;
 
 /**
  * 获取阿波罗配置
