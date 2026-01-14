@@ -1,6 +1,6 @@
 <?php
-namespace ApolloSdk\Clientd;
-use ApolloSdk\Helpers;
+namespace ApolloSdk2\Clientd;
+use ApolloSdk2\Helpers;
 
 class Storage {
 
