@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ApolloSdk\\Clientd\\": "src/"
+            "ApolloSdk2\\Clientd\\": "src/"
         },
         "files": [
             "src/Helpers.php"
