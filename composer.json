@@ -1,5 +1,5 @@
 {
-    "name": "apollo-sdk/clientd",
+    "name": "apollo-sdk/clientd2",
     "description": "complete implementation of Ctrip Apollo read configuration interface",
     "type": "library",
     "license": "MIT",
