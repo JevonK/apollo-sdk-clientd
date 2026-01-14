@@ -11,7 +11,7 @@
     ],
     "homepage": "https://github.com/fengzhibin/apollo-sdk-configd",
     "require": {
-        "apollo-sdk/config": "^1.0"
+        "apollo-sdk/config": "^2.0"
     },
     "autoload": {
         "psr-4": {
