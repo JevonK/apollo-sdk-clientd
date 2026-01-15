@@ -54,12 +54,17 @@ function get_config($key, $default = '', $namespaceName = null, $appId = null, $
             $allConfig[$staticCacheKey] = [];
         }
     }
-    //返回该key的值
-    $value = isset($allConfig[$staticCacheKey][$key])?$allConfig[$staticCacheKey][$key]:$default;
-    if(is_json($value)) {
-        $tmp = json_decode($value, true);
-        is_array($tmp) && $value = $tmp;
-        unset($tmp);
+    if ($key === "*") {
+        // 如果为*号，就返回当前namespace中所有的参数
+        $value = isset($allConfig[$staticCacheKey]) ? $allConfig[$staticCacheKey] : $default;
+    } else {
+        //返回该key的值
+        $value = isset($allConfig[$staticCacheKey][$key])?$allConfig[$staticCacheKey][$key]:$default;
+        if(is_json($value)) {
+            $tmp = json_decode($value, true);
+            is_array($tmp) && $value = $tmp;
+            unset($tmp);
+        }
     }
     return $value;
 }
